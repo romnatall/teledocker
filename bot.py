@@ -18,6 +18,11 @@ logging.basicConfig(
     )
 
 
+
+@dp.message(Command("start"))
+async def cmd_start(message: types.Message):
+    await message.answer("этот бот производит транслитерацию предложения на английский")
+
 @dp.message()
 async def echo(message: types.Message):
     logging.info(message.text+" "+ message.from_user.username)
