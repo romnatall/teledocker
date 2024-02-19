@@ -19,5 +19,5 @@ docker build -t doctelbot .
 docker run doctelbot
 ```
 
-после выполненных шагов бот запустится, доги сохраняются в mflog.log
+после выполненных шагов бот запустится, логи сохраняются в mflog.log
 
